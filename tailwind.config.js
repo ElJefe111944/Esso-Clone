@@ -8,6 +8,13 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['"Open Sans"', 'sans-serif']
+      },
+      backgroundColor: {
+        primaryGray: "#e0e0e0",
+        primaryBlue: "#0e469b"
+      },
+      colors: {
+        primaryBlack: "#2b2626",
       }
     },
   },
