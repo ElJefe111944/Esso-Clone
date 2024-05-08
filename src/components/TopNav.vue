@@ -8,9 +8,15 @@
             <!-- social -->
             <div class="flex text-xs">
                 <!-- desktop icons -->
-                <div class="hidden lg:flex items-center">
-                    <a class="pt-3 pb-3 px-4 font-medium hover:bg-hoverGray" href="#">
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="#">
                         <FacebookIcon />
+                    </a>
+                    <a href="#">
+                        <TwitterIcon />
+                    </a>
+                    <a href="#">
+                        <YoutubeIcon />
                     </a>
                 </div>
                 <!-- mobile icons -->
@@ -31,5 +37,7 @@
 <script setup>
 import TopNavLink from '../ui/slots/TopNavLink.vue';
 import FacebookIcon from '../ui/icons/FacebookIcon.vue';
+import TwitterIcon from '../ui/icons/TwitterIcon.vue';
+import YoutubeIcon from '../ui/icons/YoutubeIcon.vue';
 
 </script>

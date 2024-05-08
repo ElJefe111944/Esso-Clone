@@ -1,6 +1,15 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-400" viewBox="0 0 512 512" height="22" width="22">
-        <path
-            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+    <svg class="fill-primaryGrayIcons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="22"
+        height="22" viewBox="0 0 256 256" xml:space="preserve">
+
+        <defs>
+        </defs>
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+            <path
+                d="M 45 -0.228 c -24.853 0 -45 20.25 -45 45.229 c 0 22.806 16.797 41.66 38.633 44.77 V 58.779 h -10.64 V 46.328 h 10.64 v -9.182 c 0 -10.656 6.441 -16.458 15.849 -16.458 c 4.506 0 8.38 0.339 9.508 0.491 v 11.136 l -6.525 0.003 c -5.116 0 -6.107 2.457 -6.107 6.061 v 7.949 h 12.202 l -1.589 12.451 H 51.359 v 30.993 C 73.199 86.666 90 67.81 90 45.001 C 90 20.022 69.853 -0.228 45 -0.228 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(169,169,169); fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+        </g>
     </svg>
 </template>
