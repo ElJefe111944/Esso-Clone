@@ -9,7 +9,9 @@
             <div class="flex text-xs">
                 <!-- desktop icons -->
                 <div class="hidden lg:flex items-center">
-                    <a class="pt-3 pb-3 px-4 font-medium hover:bg-hoverGray" href="#">Icons</a>
+                    <a class="pt-3 pb-3 px-4 font-medium hover:bg-hoverGray" href="#">
+                        <FacebookIcon />
+                    </a>
                 </div>
                 <!-- mobile icons -->
                 <div class="items-center lg:hidden">
@@ -28,5 +30,6 @@
 
 <script setup>
 import TopNavLink from '../ui/slots/TopNavLink.vue';
+import FacebookIcon from '../ui/icons/FacebookIcon.vue';
 
 </script>
