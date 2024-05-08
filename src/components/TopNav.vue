@@ -26,8 +26,8 @@
             </div>
             <!-- location -->
             <div>
-                <div class="flex items-center text-xs">
-                    <TopNavLink>Select location</TopNavLink>
+                <div class="flex items-center text-xs before:content-['|'] before:mr-1 before:ml-4">
+                    <TopNavLink class="flex gap-2 items-center"><GlobeIcon /> Select a location</TopNavLink>
                 </div>
             </div>
         </div>
@@ -39,5 +39,6 @@ import TopNavLink from '../ui/slots/TopNavLink.vue';
 import FacebookIcon from '../ui/icons/FacebookIcon.vue';
 import TwitterIcon from '../ui/icons/TwitterIcon.vue';
 import YoutubeIcon from '../ui/icons/YoutubeIcon.vue';
+import GlobeIcon from '../ui/icons/GlobeIcon.vue';
 
 </script>
