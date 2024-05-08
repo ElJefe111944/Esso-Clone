@@ -8,7 +8,7 @@
             <!-- social -->
             <div class="flex text-xs">
                 <!-- desktop icons -->
-                <div class="hidden lg:flex items-center gap-4">
+                <div class="hidden lg:flex md:flex items-center gap-4">
                     <a href="#">
                         <FacebookIcon />
                     </a>
@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <!-- mobile icons -->
-                <div class="items-center lg:hidden">
+                <div class="items-center lg:hidden md:hidden">
                     <TopNavLink>Social</TopNavLink>
                 </div>
             </div>
