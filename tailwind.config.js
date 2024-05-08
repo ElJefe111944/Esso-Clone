@@ -11,7 +11,8 @@ export default {
       },
       backgroundColor: {
         primaryGray: "#e0e0e0",
-        primaryBlue: "#0e469b"
+        primaryBlue: "#0e469b",
+        secondaryGray: '#f0f0f0',
       },
       colors: {
         primaryBlack: "#2b2626",
