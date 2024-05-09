@@ -22,6 +22,4 @@ const props = defineProps({
         default: 'rgb(132,132,132)'
     }
 })
-
-console.log(props.foo)
 </script>

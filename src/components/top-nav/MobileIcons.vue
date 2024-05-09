@@ -22,6 +22,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import FacebookIcon from '../../ui/icons/FacebookIcon.vue';
+import TwitterIcon from '../../ui/icons/TwitterIcon.vue';
+import YoutubeIcon from '../../ui/icons/YoutubeIcon.vue';
 
 const isOpen = ref(false);
 
