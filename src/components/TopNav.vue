@@ -20,14 +20,27 @@
                     </a>
                 </div>
                 <!-- mobile icons -->
-                <div class="items-center lg:hidden md:hidden">
-                    <TopNavLink>Social</TopNavLink>
+                <div class="items-center lg:hidden md:hidden relative">
+                    <a class="pt-3 pb-3 px-4 font-medium hover:bg-hoverGray" href="#">Social</a>
+                    <div class="absolute hidden flex right-3 mt-3 gap-4 p-2 bg-black rounded-md after:w-0 after:h-0 after:border-l-[8px] after:border-r-[8px] after:border-l-transparent after:border-r-transparent after:border-b-[16px] after:absolute after:right-4 after:-top-2 after:font-black after:border-black">
+                        <a href="#">
+                            <FacebookIcon />
+                        </a>
+                        <a href="#">
+                            <TwitterIcon />
+                        </a>
+                        <a href="#">
+                            <YoutubeIcon />
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- location -->
             <div>
                 <div class="flex items-center text-xs before:content-['|'] before:mr-1 before:ml-4">
-                    <TopNavLink class="flex gap-2 items-center"><GlobeIcon /> Select a location</TopNavLink>
+                    <TopNavLink class="flex gap-2 items-center">
+                        <GlobeIcon /> Select a location
+                    </TopNavLink>
                 </div>
             </div>
         </div>
