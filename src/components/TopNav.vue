@@ -13,8 +13,8 @@
                 <MobileIcons />
             </div>
             <!-- location -->
-            <div>
-                <div class="flex items-center text-xs before:content-['|'] md:before:mr-1 md:before:ml-4">
+            <div class="h-full flex items-center">
+                <div class="flex h-full items-center text-xs before:content-['|'] md:before:mr-1 md:before:ml-4">
                     <TopNavLink class="flex gap-2 items-center">
                         <GlobeIcon /> Select a location
                     </TopNavLink>
