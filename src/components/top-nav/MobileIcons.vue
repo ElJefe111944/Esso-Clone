@@ -5,7 +5,7 @@
         <!-- dropdown -->
         <Transition>
             <div v-show="isOpen"
-                class="absolute flex right-3 mt-3 gap-4 p-2 bg-black rounded-md after:w-0 after:h-0 after:border-l-[8px] after:border-r-[8px] after:border-l-transparent after:border-r-transparent after:border-b-[16px] after:absolute md:after:right-4 after:right-1 after:-top-2 after:font-black after:border-black">
+                class="absolute z-10 flex right-3 mt-3 gap-4 p-2 bg-black rounded-md after:w-0 after:h-0 after:border-l-[8px] after:border-r-[8px] after:border-l-transparent after:border-r-transparent after:border-b-[16px] after:absolute md:after:right-4 after:right-1 after:-top-2 after:font-black after:border-black">
                 <a href="#">
                     <FacebookIcon colour="rgb(255,255,255)" />
                 </a>
