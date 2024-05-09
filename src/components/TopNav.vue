@@ -53,5 +53,11 @@ import FacebookIcon from '../ui/icons/FacebookIcon.vue';
 import TwitterIcon from '../ui/icons/TwitterIcon.vue';
 import YoutubeIcon from '../ui/icons/YoutubeIcon.vue';
 import GlobeIcon from '../ui/icons/GlobeIcon.vue';
+import { ref } from 'vue';
 
+const isOpen = ref(false);
+
+const toggleDropdown = () => {
+    isOpen.value = !isOpen.value;
+};
 </script>
