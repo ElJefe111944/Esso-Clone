@@ -22,7 +22,7 @@
                 <!-- mobile icons -->
                 <div class="items-center lg:hidden md:hidden relative">
                     <a class="pt-3 pb-3 px-4 font-medium hover:bg-hoverGray" href="#">Social</a>
-                    <div class="absolute hidden flex right-3 mt-3 gap-4 p-2 bg-black rounded-md after:w-0 after:h-0 after:border-l-[8px] after:border-r-[8px] after:border-l-transparent after:border-r-transparent after:border-b-[16px] after:absolute after:right-4 after:-top-2 after:font-black after:border-black">
+                    <div class="absolute flex invisible right-3 mt-3 gap-4 p-2 bg-black rounded-md after:w-0 after:h-0 after:border-l-[8px] after:border-r-[8px] after:border-l-transparent after:border-r-transparent after:border-b-[16px] after:absolute after:right-4 after:-top-2 after:font-black after:border-black">
                         <a href="#">
                             <FacebookIcon />
                         </a>
