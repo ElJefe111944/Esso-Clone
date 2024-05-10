@@ -71,4 +71,12 @@ import MainNavItem from '../../ui/slots/MainNavItem.vue';
 .collapse {
     visibility: visible;
 }
+.container-fluid.h-20.lg\:px-0 {
+    padding: 0px;
+}
+@media(max-width: 1024px){
+  .container-fluid.h-20.lg\:px-0 {
+    padding: 0px 20px;
+}
+}
 </style>
