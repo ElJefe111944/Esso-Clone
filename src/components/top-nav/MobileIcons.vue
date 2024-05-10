@@ -1,6 +1,6 @@
 <template>
     <div class="items-center lg:hidden md:hidden relative">
-        <a class="md:pt-3 md:pb-3 md:px-4 px-1 pt-1 pb-1 text-[9px] no-underline text-primaryBlack font-medium hover:bg-hoverGray"
+        <a class="md:pt-3 md:pb-3 md:px-4 px-1 pt-1 pb-1 text-[11px] no-underline text-primaryBlack font-medium hover:bg-hoverGray"
             @click="isOpen = !isOpen" href="#">Social</a>
         <!-- dropdown -->
         <Transition>
