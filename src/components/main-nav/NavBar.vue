@@ -23,10 +23,10 @@
         </MainNavItem>
         <li @click="searchDropdownOpen = !searchDropdownOpen"
           class="hover:bg-hoverGray hover:border-t-4 border-t-4 border-transparent hover:border-primaryBlue h-full px-4">
-          <a class="items-center text-sm no-underline text-primaryBlack hover:text-primaryBlue my-auto font-medium text-nowrap flex h-full"
+          <button class="items-center text-sm no-underline text-primaryBlack hover:text-primaryBlue my-auto font-medium text-nowrap flex h-full"
             href="">
             <SearchIcon />
-          </a>
+          </button>
         </li>
       </ul>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -40,7 +40,12 @@
   </nav>
   <!-- search dropdown -->
   <div v-show="searchDropdownOpen">
-    test
+    <v-text-field
+  clearable
+  label="Label"
+  prepend-icon="$vuetify"
+  variant="underlined"
+></v-text-field>
   </div>
 </template>
 
