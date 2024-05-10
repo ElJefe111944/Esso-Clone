@@ -1,7 +1,9 @@
 <template>
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <a class="navbar-brand lg:pl-4" href="#">
+      <img class="md:w-full w-30 h-auto max-w-full" :src="Logo" alt="Esso Logo">
+    </a>
     <button class="navbar-toggler block md:block lg:hidden" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -60,7 +62,7 @@
 </template>
 
 <script setup>
-
+import Logo from "../../assets/logo.png"
 </script>
 
 <style scoped>
