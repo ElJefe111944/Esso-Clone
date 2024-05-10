@@ -1,28 +1,28 @@
 <template>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
+<nav class="navbar bg-body-tertiary p-0">
+  <div class="container-fluid h-20 lg:px-0">
     <a class="navbar-brand lg:pl-4" href="#">
       <img class="md:w-full w-30 h-auto max-w-full" :src="Logo" alt="Esso Logo">
     </a>
     <button class="navbar-toggler block md:block lg:hidden" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="hidden lg:flex gap-x-8 items-center p-0 m-0">
-      <li>
-        <a href="">Link</a>
-      </li>
-      <li>
-        <a href="">Link</a>
-      </li>
-      <li>
-        <a href="">Link</a>
-      </li>
-      <li>
-        <a href="">Link</a>
-      </li>
-      <li>
-        <a href="">link</a>
-      </li>
+    <ul class="hidden lg:flex justify-items-end gap-x-0 items-center p-0 m-0 h-full">
+      <MainNavItem>
+        Station Finder
+      </MainNavItem>
+      <MainNavItem>
+        Loyalty & Payments
+      </MainNavItem>
+      <MainNavItem>
+        Fuels
+      </MainNavItem>
+      <MainNavItem>
+        Contact
+      </MainNavItem>
+      <MainNavItem>
+        Search
+      </MainNavItem>
     </ul>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
@@ -62,7 +62,9 @@
 </template>
 
 <script setup>
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo.png";
+import MainNavItem from '../../ui/slots/MainNavItem.vue';
+
 </script>
 
 <style scoped>

@@ -17,7 +17,8 @@ export default {
       },
       colors: {
         primaryBlack: "#2b2626",
-        primaryGrayIcons: '#454545'
+        primaryGrayIcons: '#454545',
+        primaryBlue: "#0e469b",
       }
     },
   },
