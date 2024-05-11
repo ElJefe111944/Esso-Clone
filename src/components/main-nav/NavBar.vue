@@ -41,11 +41,12 @@
   </nav>
   <!-- search dropdown -->
   <div class="h-20 flex bg-body-tertiary w-full border-t-2 border-gray-200" v-show="searchDropdownOpen">
-    <div class="flex-1">
-      <v-text-field clearable label="Label" prepend-icon="$vuetify" variant="underlined"></v-text-field>
+    <div class="flex-1 flex my-0 mx-4 items-center gap-4">
+      <SearchIcon height="33" width="33" colour="rgb(158,158,158)" stroke-width="2" stroke="lightGray" />
+      <input class="text-gray-600 text-xl w-full h-full outline-none placeholder:text-gray-600 placeholder:text-2xl" placeholder="Search for topics, articles, data.." type="text">
     </div>
-    <div class="w-[200px] flex items-center justify-center border-l-2 border-gray-200 my-3">
-      <button class="w-full">Search</button>
+    <div class="w-[200px] flex items-center justify-center border-l-2 border-gray-300 my-3">
+      <button class="w-full text-gray-600 text-xl">Search</button>
     </div>
   </div>
 </template>
