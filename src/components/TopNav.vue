@@ -1,5 +1,5 @@
 <template>
-    <div class="flex bg-secondaryGray h-11 pt-1 gap-0 md:justify-between flex-col md:flex-row">
+    <div class="flex bg-secondaryGray h-11 sm:pt-1 md:pt-0 ld:pt-0 gap-0 md:justify-between flex-col md:flex-row">
         <div class="flex text-xs items-center">
             <TopNavLink>Business lines</TopNavLink>
             <TopNavLink>Global brands</TopNavLink>
@@ -14,8 +14,8 @@
             </div>
             <!-- location -->
             <div class="h-full flex items-center">
-                <div class="flex h-full items-center text-xs before:content-['|'] md:before:mr-1 md:before:ml-4">
-                    <TopNavLink class="flex gap-2 items-center">
+                <div class="flex h-full items-center text-xs before:content-['|'] md:before:mr-0 md:before:ml-4">
+                    <TopNavLink class="flex gap-2 items-center lg:">
                         <GlobeIcon /> Select a location
                     </TopNavLink>
                 </div>

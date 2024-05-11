@@ -2,7 +2,7 @@
   <nav class="navbar bg-body-tertiary p-0">
     <div class="container-fluid h-20 lg:px-0">
       <a class="navbar-brand lg:pl-4" href="#">
-        <img class="md:w-full w-30 h-auto max-w-full" :src="Logo" alt="Esso Logo">
+        <img class="md:w-full w-30 h-auto max-w-full ml-4" :src="Logo" alt="Esso Logo">
       </a>
       <button class="navbar-toggler block md:block lg:hidden" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -23,7 +23,8 @@
         </MainNavItem>
         <li @click="searchDropdownOpen = !searchDropdownOpen"
           class="hover:bg-hoverGray hover:border-t-4 border-t-4 border-transparent hover:border-primaryBlue h-full px-4">
-          <button class="items-center text-sm no-underline text-primaryBlack hover:text-primaryBlue my-auto font-medium text-nowrap flex h-full"
+          <button
+            class="items-center text-sm no-underline text-primaryBlack hover:text-primaryBlue my-auto font-medium text-nowrap flex h-full"
             href="">
             <SearchIcon />
           </button>
@@ -39,13 +40,13 @@
     </div>
   </nav>
   <!-- search dropdown -->
-  <div v-show="searchDropdownOpen">
-    <v-text-field
-  clearable
-  label="Label"
-  prepend-icon="$vuetify"
-  variant="underlined"
-></v-text-field>
+  <div class="h-20 flex bg-body-tertiary w-full border-t-2 border-gray-200" v-show="searchDropdownOpen">
+    <div class="flex-1">
+      <v-text-field clearable label="Label" prepend-icon="$vuetify" variant="underlined"></v-text-field>
+    </div>
+    <div class="w-[200px] flex items-center justify-center border-l-2 border-gray-200 my-3">
+      <button class="w-full">Search</button>
+    </div>
   </div>
 </template>
 

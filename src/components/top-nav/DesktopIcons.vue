@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden lg:flex md:flex items-center gap-4">
+    <div class="hidden lg:flex md:flex items-center gap-3">
         <a href="#">
             <FacebookIcon />
         </a>
