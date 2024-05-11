@@ -2,7 +2,7 @@
   <nav class="navbar bg-body-tertiary p-0">
     <div class="container-fluid h-20 lg:px-0">
       <a class="navbar-brand lg:pl-4" href="#">
-        <img class="md:w-full w-30 h-auto max-w-full ml-4" :src="Logo" alt="Esso Logo">
+        <img class="md:w-full w-[140px] h-auto max-w-full md:ml-4" :src="Logo" alt="Esso Logo">
       </a>
       <button class="navbar-toggler block md:block lg:hidden" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
   <!-- search dropdown -->
   <div class="h-20 flex bg-body-tertiary w-full border-t-2 border-gray-200" v-show="searchDropdownOpen">
     <div class="flex-1 flex my-0 mx-2 md:mx-4 items-center gap-4">
-      <SearchIcon height="33" width="33" colour="rgb(158,158,158)" stroke-width="2" stroke="lightGray" />
+      <SearchIcon height="33" width="33" colour="rgb(158,158,158)" class="md:ml-2" stroke-width="2" stroke="lightGray" />
       <input class="text-gray-600 text-xl w-full h-full outline-none placeholder:text-gray-600 placeholder:text-lg md:placeholder:text-2xl" placeholder="Search for topics, articles, data.." type="text">
     </div>
     <div class="w-[200px] items-center justify-center border-l-2 border-gray-300 my-3 hidden md:flex">
