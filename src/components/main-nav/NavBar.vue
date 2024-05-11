@@ -26,7 +26,8 @@
           <button
             class="items-center text-sm no-underline text-primaryBlack hover:text-primaryBlue my-auto font-medium text-nowrap flex h-full"
             href="">
-            <SearchIcon />
+            <SearchIcon height="20" width="20" v-if="!searchDropdownOpen" />
+            <CloseIcon height="20" width="20" v-else />
           </button>
         </li>
       </ul>
@@ -41,11 +42,11 @@
   </nav>
   <!-- search dropdown -->
   <div class="h-20 flex bg-body-tertiary w-full border-t-2 border-gray-200" v-show="searchDropdownOpen">
-    <div class="flex-1 flex my-0 mx-4 items-center gap-4">
+    <div class="flex-1 flex my-0 mx-2 md:mx-4 items-center gap-4">
       <SearchIcon height="33" width="33" colour="rgb(158,158,158)" stroke-width="2" stroke="lightGray" />
-      <input class="text-gray-600 text-xl w-full h-full outline-none placeholder:text-gray-600 placeholder:text-2xl" placeholder="Search for topics, articles, data.." type="text">
+      <input class="text-gray-600 text-xl w-full h-full outline-none placeholder:text-gray-600 placeholder:text-lg md:placeholder:text-2xl" placeholder="Search for topics, articles, data.." type="text">
     </div>
-    <div class="w-[200px] flex items-center justify-center border-l-2 border-gray-300 my-3">
+    <div class="w-[200px] items-center justify-center border-l-2 border-gray-300 my-3 hidden md:flex">
       <button class="w-full text-gray-600 text-xl">Search</button>
     </div>
   </div>
@@ -57,6 +58,7 @@ import Logo from "../../assets/logo.png";
 import MainNavItem from '../../ui/slots/MainNavItem.vue';
 import SearchIcon from "../../ui/icons/SearchIcon.vue";
 import MobileNav from "./MobileNav.vue";
+import CloseIcon from "../../ui/icons/CloseIcon.vue";
 
 
 const searchDropdownOpen = ref(false);
