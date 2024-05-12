@@ -4,14 +4,16 @@ import TopNav from './components/TopNav.vue';
 import HeaderDivider from './components/HeaderDivider.vue';
 import NavBar from './components/main-nav/NavBar.vue';
 import MainBanner from './components/content/MainBanner.vue';
+import BaseContainer from './ui/slots/BaseContainer.vue'
 </script>
-
 <template>
   <BaseTemplate>
     <TopNav />
     <NavBar />
     <HeaderDivider />
-    <MainBanner />
+    <BaseContainer>
+      <MainBanner />
+    </BaseContainer>
   </BaseTemplate>
 </template>
 
