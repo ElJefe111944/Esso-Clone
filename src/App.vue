@@ -3,6 +3,7 @@ import BaseTemplate from './ui/slots/BaseTemplate.vue';
 import TopNav from './components/TopNav.vue';
 import HeaderDivider from './components/HeaderDivider.vue';
 import NavBar from './components/main-nav/NavBar.vue';
+import MainBanner from './components/content/MainBanner.vue';
 </script>
 
 <template>
@@ -10,9 +11,7 @@ import NavBar from './components/main-nav/NavBar.vue';
     <TopNav />
     <NavBar />
     <HeaderDivider />
-    <h1 class="text-3xl underline font-sans">
-      Hello world!
-    </h1>
+    <MainBanner />
   </BaseTemplate>
 </template>
 
