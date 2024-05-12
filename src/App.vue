@@ -5,6 +5,8 @@ import HeaderDivider from './components/HeaderDivider.vue';
 import NavBar from './components/main-nav/NavBar.vue';
 import MainBanner from './components/content/MainBanner.vue';
 import BaseContainer from './ui/slots/BaseContainer.vue'
+import ContentSpot from './components/content/ContentSpot.vue';
+
 </script>
 <template>
   <BaseTemplate>
@@ -13,6 +15,7 @@ import BaseContainer from './ui/slots/BaseContainer.vue'
     <HeaderDivider />
     <BaseContainer>
       <MainBanner />
+      <ContentSpot />
     </BaseContainer>
   </BaseTemplate>
 </template>
