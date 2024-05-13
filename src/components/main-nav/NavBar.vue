@@ -4,7 +4,7 @@
       <a class="navbar-brand lg:pl-4" href="#">
         <img class="md:w-full w-[140px] h-auto max-w-full md:ml-4" :src="Logo" alt="Esso Logo">
       </a>
-      <div class="flex md:hidden lg:hidden items-center h-full">
+      <div class="flex lg:hidden items-center h-full">
         <MainNavItem class="list-none flex flex-col justify-center gap-2 items-center" @click="searchDropdownOpen = !searchDropdownOpen">
           <SearchIcon height="20" width="20" colour="rgb(14,70,155)" v-if="!searchDropdownOpen" />
           <CloseIcon height="20" width="20" colour="rgb(14,70,155)" v-else />
