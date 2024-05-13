@@ -1,6 +1,9 @@
 <script setup>
 import { reactive } from 'vue';
-import componentData from './data/componentData.json'
+// data
+import componentData from './data/componentData.json';
+import cardData from './data/cardData.json';
+// components
 import BaseTemplate from './ui/slots/BaseTemplate.vue';
 import TopNav from './components/TopNav.vue';
 import HeaderDivider from './components/HeaderDivider.vue';
@@ -12,6 +15,7 @@ import CardContentContainer from './components/content/CardContentContainer.vue'
 
 
 const componentSpots = reactive(componentData);
+const cards = reactive(cardData);
 
 
 </script>
@@ -23,7 +27,7 @@ const componentSpots = reactive(componentData);
     <BaseContainer>
       <MainBanner />
       <ContentSpot v-for="content in componentSpots" :key="content.id" :content="content" />
-      <CardContentContainer />
+      <CardContentContainer :cards="cards" />
     </BaseContainer>
   </BaseTemplate>
 </template>
