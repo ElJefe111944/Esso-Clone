@@ -15,7 +15,7 @@
                 <p class="lg:text-base font-sans font-thin text-sm">We can help you find your nearest service station and even give you directions.</p>
                 <p>
                     <BaseButton>
-                        <a class="no-underline text-white text-base capitalize font-bold tracking-normal font-sans"
+                        <a class="no-underline text-white text-[11px] md:text-base capitalize font-bold tracking-normal font-sans"
                             href="#">Find a service station</a>
                     </BaseButton>
                 </p>

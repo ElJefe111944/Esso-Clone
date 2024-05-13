@@ -13,7 +13,7 @@
             <p class="lg:text-base font-sans font-thin text-sm">{{ info }}</p>
             <p>
                 <BaseButton>
-                    <a class="no-underline text-white text-sm capitalize font-bold tracking-normal font-sans"
+                    <a class="no-underline text-white md:text-sm text-[9.25px] capitalize font-bold tracking-normal font-sans"
                         href="#">{{ ctaText }}</a>
                 </BaseButton>
             </p>
