@@ -1,30 +1,69 @@
 <template>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header bg-primaryGray">
-                <button class="accordion-button" style="background-color: rgb(235, 235, 235);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    General Terms and Conditions
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show after:hidden" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ol>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti vitae molestias beatae
-                            consequuntur mollitia doloribus possimus iusto similique voluptates, officiis ut nihil
-                            delectus temporibus sunt asperiores quibusdam, accusamus dolorum assumenda!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab laboriosam consectetur
-                            distinctio esse magnam veritatis dolorum magni vitae facere autem tempore quos officiis, at
-                            sapiente odio, repellat aspernatur ratione!</li>
-                    </ol>
-                </div>
-            </div>
+        <div class="rounded-none">
+            <Accordion expandIcon="pi pi-plus" collapseIcon="pi pi-minus" class="rounded-none">
+                <AccordionTab>
+                    <template #header>
+                        <span class="flex align-items-center gap-2 w-full">
+    
+                            <span class="font-bold white-space-nowrap">Amy Elsner</span>
+                            <Badge value="3" class="ml-auto mr-2" />
+                        </span>
+                    </template>
+                    <p class="m-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                </AccordionTab>
+                <AccordionTab>
+                    <template #header>
+                        <span class="flex align-items-center gap-2 w-full">
+
+                            <span class="font-bold white-space-nowrap">Onyama Limba</span>
+                            <Badge value="4" class="ml-auto mr-2" />
+                        </span>
+                    </template>
+                    <p class="m-0">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim
+                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non
+                        numquam eius modi.
+                    </p>
+                </AccordionTab>
+                <AccordionTab>
+                    <template #header>
+                        <span class="flex align-items-center gap-2 w-full">
+
+                            <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
+                            <Badge value="2" class="ml-auto mr-2" />
+                        </span>
+                    </template>
+                    <p class="m-0">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui
+                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+                        est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                        impedit quo minus.
+                    </p>
+                </AccordionTab>
+            </Accordion>
         </div>
-    </div>
 </template>
 
+
+<script setup>
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
+
+
+</script>
+
 <style scoped>
-.collapse {
-  visibility: visible;
-}
+
 </style>
