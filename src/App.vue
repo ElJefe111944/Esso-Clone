@@ -12,6 +12,7 @@ import MainBanner from './components/content/MainBanner.vue';
 import BaseContainer from './ui/slots/BaseContainer.vue'
 import ContentSpot from './components/content/ContentSpot.vue';
 import CardContentContainer from './components/content/CardContentContainer.vue';
+import TermsContainer from './components/terms/TermsContainer.vue';
 
 
 const componentSpots = reactive(componentData);
@@ -28,6 +29,7 @@ const cards = reactive(cardData);
       <MainBanner />
       <ContentSpot v-for="content in componentSpots" :key="content.id" :content="content" />
       <CardContentContainer :cards="cards" />
+      <TermsContainer />
     </BaseContainer>
   </BaseTemplate>
 </template>
