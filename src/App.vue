@@ -8,6 +8,7 @@ import NavBar from './components/main-nav/NavBar.vue';
 import MainBanner from './components/content/MainBanner.vue';
 import BaseContainer from './ui/slots/BaseContainer.vue'
 import ContentSpot from './components/content/ContentSpot.vue';
+import CardContentContainer from './components/content/CardContentContainer.vue';
 
 
 const componentSpots = reactive(componentData);
@@ -22,6 +23,7 @@ const componentSpots = reactive(componentData);
     <BaseContainer>
       <MainBanner />
       <ContentSpot v-for="content in componentSpots" :key="content.id" :content="content" />
+      <CardContentContainer />
     </BaseContainer>
   </BaseTemplate>
 </template>
