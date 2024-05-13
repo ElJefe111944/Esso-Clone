@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Get more out of your Esso Card™",
+        "info": "Find out how we can help you save time and money with Esso Card™.",
+        "ctaText": "Learn more about Esso Card",
+        "topImg": "https://www.esso.co.uk/-/media/project/wep/esso/2-card-white-background/feature-item-sm.png"
+    },
+    {
+        "id": 2,
+        "title": "Esso Nectar",
+        "info": "Collect and spend Nectar points when you visit participating Esso service stations.",
+        "ctaText": "Discover more about Nectar",
+        "topImg": "https://www.esso.co.uk/-/media/project/wep/esso/esso-retail-uk/confetti-crops/758570-12_exx_image_crops7.png"
+    },
+    {
+        "id": 3,
+        "title": "Get closer to our fuels",
+        "info": "Find out more about Synergy™ fuels.",
+        "ctaText": "Learn more about our fuels",
+        "topImg": "https://www.esso.co.uk/-/media/project/wep/esso/esso-retail-be/sweater-woman-fuel/sm-439x205.jpg"
+    }
+]
