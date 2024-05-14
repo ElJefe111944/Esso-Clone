@@ -1,5 +1,5 @@
 <template>
-    <div class="flex md:mt-8 lg:flex-row flex-col sm:mt-2 gap-3" :class="{ 'lg:flex-row-reverse': isEven }">
+    <div class="flex md:mt-8 md:flex-row flex-col sm:mt-2 gap-3" :class="{ 'md:flex-row-reverse': isEven }">
         <div class="flex-1">
             <picture>
                 <source media="(min-width:768px)"
@@ -13,7 +13,7 @@
             <p class="lg:text-base font-sans font-thin text-sm">{{ info }}</p>
             <p>
                 <BaseButton>
-                    <a class="no-underline text-white md:text-sm text-[9.25px] capitalize font-bold tracking-normal font-sans"
+                    <a class="no-underline text-white md:text-sm text-[11px] capitalize font-bold tracking-normal font-sans"
                         href="#">{{ ctaText }}</a>
                 </BaseButton>
             </p>
