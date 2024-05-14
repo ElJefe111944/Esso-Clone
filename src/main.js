@@ -7,8 +7,10 @@ import * as directives from 'vuetify/directives'
 
 import PrimeVue from 'primevue/config';
 import 'primevue/resources/themes/aura-light-green/theme.css'
+import 'primeicons/primeicons.css'
 
 import './style.css'
+import "bootstrap-icons/font/bootstrap-icons.css"
 import "bootstrap/dist/css/bootstrap.css";
 import App from './App.vue'
 
