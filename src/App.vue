@@ -13,6 +13,7 @@ import BaseContainer from './ui/slots/BaseContainer.vue'
 import ContentSpot from './components/content/ContentSpot.vue';
 import CardContentContainer from './components/content/CardContentContainer.vue';
 import TermsContainer from './components/terms/TermsContainer.vue';
+import Disclaimer from './components/terms/Disclaimer.vue';
 
 
 const componentSpots = reactive(componentData);
@@ -30,6 +31,7 @@ const cards = reactive(cardData);
       <ContentSpot v-for="content in componentSpots" :key="content.id" :content="content" />
       <CardContentContainer :cards="cards" />
       <TermsContainer />
+      <Disclaimer />
     </BaseContainer>
   </BaseTemplate>
 </template>
