@@ -52,20 +52,7 @@ const biMinusIcon = 'bi bi-dash-circle text-[24px] text-red-500';
 </script>
 
 <style scoped>
-.p-accordion-tab-active .p-accordion-header .header-tab {
-    background-color: white;
-}
-.header-tab {
-    transition: background-color .35s ease;
-}
 
-.p-accordion-tab.p-accordion-tab-active {
-    border-left: 2px solid #00a3e0;
-}
-.p-accordion-tab {
-    background-color: rgb(235, 235, 235);
-    margin-bottom: 5px;
-}
 /* animations */
 .fadein {
     animation: fadeInAnimation 1s forwards;
