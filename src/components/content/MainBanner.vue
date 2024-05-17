@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="lg:relative">
+        <div class="lg:relative" v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }">
             <div>
                 <picture>
                     <source media="(min-width:768px)"
@@ -28,3 +28,25 @@
 import BaseButton from '../../ui/slots/BaseButton.vue';
 
 </script>
+
+<style scoped>
+/* animations */
+.fadein {
+    animation: fadeInAnimation 1s forwards;
+}
+
+.fadeout {
+    animation: fadeOutAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+</style>

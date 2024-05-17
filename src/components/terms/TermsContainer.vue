@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-none">
+    <div class="rounded-none" v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }">
         <Accordion class="rounded-none" :expandIcon="biPlusIcon" :collapseIcon="biMinusIcon">
             <AccordionTab v-for="(tab, index) in tabs" :key="index" class="tab">
                 <template #header>
@@ -65,5 +65,23 @@ const biMinusIcon = 'bi bi-dash-circle text-[24px] text-red-500';
 .p-accordion-tab {
     background-color: rgb(235, 235, 235);
     margin-bottom: 5px;
+}
+/* animations */
+.fadein {
+    animation: fadeInAnimation 1s forwards;
+}
+
+.fadeout {
+    animation: fadeOutAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 </style>

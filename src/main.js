@@ -6,6 +6,7 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 import PrimeVue from 'primevue/config';
+import AnimateOnScroll from 'primevue/animateonscroll';
 import 'primevue/resources/themes/aura-light-green/theme.css'
 import 'primeicons/primeicons.css'
 
@@ -23,6 +24,7 @@ const app = createApp(App);
 
 app.use(vuetify);
 app.use(PrimeVue);
+app.directive('animateonscroll', AnimateOnScroll);
 app.mount('#app');
 
 import 'bootstrap/dist/js/bootstrap';

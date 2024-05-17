@@ -1,5 +1,5 @@
 <template>
-    <div class="py-4">
+    <div class="py-4" v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }">
         <p class="text-sm text-primaryGrayIcons font-sans">
             This landing page is a carefully crafted replica of the official Essos website and serves as a hands-on project for front-end development training. It is designed to help budding developers gain practical experience by mimicking the structure, style, and interactivity of Essos's original site. This imitation is purely for educational and skill enhancement purposes and is not connected with or endorsed by the official Essos brand.
         </p>
@@ -12,4 +12,22 @@
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* animations */
+.fadein {
+    animation: fadeInAnimation 1s forwards;
+}
+
+.fadeout {
+    animation: fadeOutAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}</style>
