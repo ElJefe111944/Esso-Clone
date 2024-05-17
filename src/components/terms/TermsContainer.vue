@@ -64,5 +64,7 @@ const toggleTab = (index) => {
     transition: background-color .35s ease;
 }
 
-
+.p-accordion-tab.p-accordion-tab-active {
+    border-left: 2px solid blue;
+}
 </style>
