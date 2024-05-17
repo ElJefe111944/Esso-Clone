@@ -5,3 +5,39 @@
 @tailwind utilities;
 
 
+/* Dropdown styling */
+.p-accordion-tab-active,
+.p-accordion-tab-active .p-accordion-header-link {
+    background-color: white;
+}
+
+.header-tab {
+    transition: background-color .35s ease;
+}
+
+.p-accordion-tab.p-accordion-tab {
+    border-left: 6px solid transparent;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.p-accordion-tab.p-accordion-tab-active {
+    border-left: 6px solid #00a3e0;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.p-accordion-tab {
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 6px;
+}
+
+.p-accordion-content {
+    padding-left: 25px;
+}
+
+.p-accordion-header-link {
+    padding: 10px;
+}

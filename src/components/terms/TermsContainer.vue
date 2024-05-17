@@ -1,14 +1,10 @@
 <template>
     <div class="rounded-none">
-        <Accordion class="rounded-none" expandIcon="null" collapseIcon="null">
-            <AccordionTab v-for="(tab, index) in tabs" :key="index">
+        <Accordion class="rounded-none" :expandIcon="biPlusIcon" :collapseIcon="biMinusIcon">
+            <AccordionTab v-for="(tab, index) in tabs" :key="index" class="tab">
                 <template #header>
-                    <span class="header-tab flex justify-between gap-2 bg-gray-100 w-full py-3 px-2 items-center border-b-4 border-white" @click="toggleTab(index)">
-                        <span class="font-bold white-space-nowrap no-underline">{{ tab.title }}</span>
-                        <span>
-                            <i v-if="!tab.isOpen" class="bi bi-plus-circle text-[24px] text-blue-500"></i>
-                            <i v-else class="bi bi-dash-circle text-[24px] text-red-500"></i>
-                        </span>
+                    <span class="header-tab flex justify-between gap-2 w-full items-center">
+                        <span class="font-bold white-space-nowrap no-underline text-sm">{{ tab.title }}</span>
                     </span>
                 </template>
                 <p class="m-0">
@@ -49,10 +45,9 @@ const tabs = ref([
     },
 ]);
 
-const toggleTab = (index) => {
-    tabs.value[index].isOpen = !tabs.value[index].isOpen;
-}
-
+// icons
+const biPlusIcon = 'bi bi-plus-circle text-[24px] text-blue-500';
+const biMinusIcon = 'bi bi-dash-circle text-[24px] text-red-500';
 
 </script>
 
@@ -65,6 +60,10 @@ const toggleTab = (index) => {
 }
 
 .p-accordion-tab.p-accordion-tab-active {
-    border-left: 2px solid blue;
+    border-left: 2px solid #00a3e0;
+}
+.p-accordion-tab {
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 5px;
 }
 </style>
