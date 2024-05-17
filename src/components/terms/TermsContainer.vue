@@ -1,11 +1,14 @@
 <template>
     <div class="rounded-none">
-        <Accordion class="rounded-none">
-            <AccordionTab v-for="(tab, index) in tabs" :key="index" @tab-open="openTab(index)">
+        <Accordion class="rounded-none" expandIcon="null" collapseIcon="null">
+            <AccordionTab v-for="(tab, index) in tabs" :key="index">
                 <template #header>
-                    <span class="flex justify-between gap-2 w-full">
+                    <span class="flex justify-between gap-2 w-full" @click="toggleTab(index)">
                         <span class="font-bold white-space-nowrap">{{ tab.title }}</span>
-                        <span><i class="bi bi-plus-circle"></i><i class="bi bi-dash-circle"></i></span>
+                        <span>
+                            <i v-if="!tab.isOpen" class="bi bi-plus-circle"></i>
+                            <i v-else class="bi bi-dash-circle"></i>
+                        </span>
                     </span>
                 </template>
                 <p class="m-0">
@@ -46,17 +49,13 @@ const tabs = ref([
     },
 ]);
 
-function openTab(index){
-    tabs.value[index].isOpen = true;
+const toggleTab = (index) => {
+    tabs.value[index].isOpen = !tabs.value[index].isOpen;
 }
 
-function closeTab(index){
-    tabs.value[index].isOpen = false;
-}
+
 </script>
 
 <style scoped>
-.p-icon {
-    display: none;
-}
+
 </style>
