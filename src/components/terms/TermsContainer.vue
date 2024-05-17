@@ -3,11 +3,11 @@
         <Accordion class="rounded-none" expandIcon="null" collapseIcon="null">
             <AccordionTab v-for="(tab, index) in tabs" :key="index">
                 <template #header>
-                    <span class="flex justify-between gap-2 w-full" @click="toggleTab(index)">
-                        <span class="font-bold white-space-nowrap">{{ tab.title }}</span>
+                    <span class="header-tab flex justify-between gap-2 bg-gray-100 w-full py-3 px-2 items-center border-b-4 border-white" @click="toggleTab(index)">
+                        <span class="font-bold white-space-nowrap no-underline">{{ tab.title }}</span>
                         <span>
-                            <i v-if="!tab.isOpen" class="bi bi-plus-circle"></i>
-                            <i v-else class="bi bi-dash-circle"></i>
+                            <i v-if="!tab.isOpen" class="bi bi-plus-circle text-[24px] text-blue-500"></i>
+                            <i v-else class="bi bi-dash-circle text-[24px] text-red-500"></i>
                         </span>
                     </span>
                 </template>
@@ -57,5 +57,12 @@ const toggleTab = (index) => {
 </script>
 
 <style scoped>
+.p-accordion-tab-active .p-accordion-header .header-tab {
+    background-color: white;
+}
+.header-tab {
+    transition: background-color .35s ease;
+}
+
 
 </style>
