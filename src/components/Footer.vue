@@ -16,7 +16,13 @@
             </div>
         </div>
         <!-- affilated copnaies -->
-        <div></div>
+        <div>
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 
     </div>
 </template>

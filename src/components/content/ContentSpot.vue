@@ -1,5 +1,5 @@
 <template>
-    <div class="flex md:mt-8 md:flex-row flex-col sm:mt-2 gap-3" :class="{ 'md:flex-row-reverse': isEven }" v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }">
+    <div class="flex md:mt-8 md:flex-row flex-col sm:mt-2 gap-3" :class="{ 'md:flex-row-reverse': isEven }">
         <div class="flex-1">
             <picture>
                 <source media="(min-width:768px)"
@@ -74,22 +74,5 @@ const isEven = computed(() => {
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
-/* animations */
-.fadein {
-    animation: fadeInAnimation 1s forwards;
-}
 
-.fadeout {
-    animation: fadeOutAnimation 1s forwards;
-}
-
-@keyframes fadeInAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeOutAnimation {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
 </style>
