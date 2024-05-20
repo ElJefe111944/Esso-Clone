@@ -13,7 +13,9 @@ export default {
         primaryGray: "#e0e0e0",
         primaryBlue: "#0e469b",
         secondaryGray: '#f0f0f0',
-        hoverGray: '#d9d9d9'
+        hoverGray: '#d9d9d9',
+        footerGray: '#383838',
+        footerBlack: '#262626'
       },
       colors: {
         primaryBlack: "#2b2626",

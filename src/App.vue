@@ -33,8 +33,8 @@ const cards = reactive(cardData);
       <CardContentContainer :cards="cards" />
       <TermsContainer />
       <Disclaimer />
-      <Footer />
     </BaseContainer>
+    <Footer />
   </BaseTemplate>
 </template>
 
